@@ -1,7 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "fullplastica",
+  "account_id": "9746ad9c92ac11911a0d4ef08e63e49f",
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
+  // Entry for Vite (@cloudflare/vite-plugin) — deploy uses dist/server/, not this file directly.
   "main": "src/server.ts",
+  "observability": {
+    "enabled": true
+  }
 }
